@@ -35,7 +35,7 @@ namespace BlasterMaster
 
             // Scroll bullets
             base.setY(base.getY() - 15);
-            base.setX(base.getX() - 5);
+            
             // Sync collision rect
             base.setRectX(base.getX() + 2);
             base.setRectY(base.getY());

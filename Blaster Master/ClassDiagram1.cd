@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BlasterMaster.clsCommon" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAgBAIABAAGoAAAIAACAAAAEAABAGAIYAA=</HashCode>
+      <FileName>clsCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsInvader" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gYhEKkIERkuQBiAEACFQAhIANBAgAByACBgAJCRAYQg=</HashCode>
+      <FileName>clsInvader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsInvaderBullet" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAABAAAAAAAAABAAAAAAAAE=</HashCode>
+      <FileName>clsInvaderBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsParticle" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABCAAAAAAAAAAYAABAAAAAAAAAAAAAAIQAAAEA=</HashCode>
+      <FileName>clsParticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsPaths" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABkAAAAAgAAAAAIAAAAQAGA=</HashCode>
+      <FileName>clsPaths.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsPickups" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAIAAAwAAIAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>clsPickups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsPlayer" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAgBAo4ggAIlRxkSAQDBFEAVkiJAAKAASZYAAE=</HashCode>
+      <FileName>clsPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsPlayerBullet" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAABAAAAAAAAABAAAAAAAAE=</HashCode>
+      <FileName>clsPlayerBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsVectorScroll" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAgQAAAABAAEAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>clsScroll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsSound" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAIQAAEGAAAIAIAAAAgAAAAAAAAAAAEAAAAAAAAgAI=</HashCode>
+      <FileName>clsSound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsStars" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>clsStars.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.clsTScales" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACIDgGAACAAAAAAAAAAAQAAAAAAAAAAAAA+AA=</HashCode>
+      <FileName>clsTScales.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.Form1" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgkYMBIlankJAEoYN3IWNqDsJuQAQAVYAXGk6qUo8A=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.PlayerMyBullet" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAABAAAAAAAAABAAAAAAAAE=</HashCode>
+      <FileName>PlayerMyBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.Program" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.Properties.Resources" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DIAAAIAEQAAIQBAAIBABEAAAAQAAAAAAAAAAAPYB4II=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlasterMaster.Properties.Settings" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

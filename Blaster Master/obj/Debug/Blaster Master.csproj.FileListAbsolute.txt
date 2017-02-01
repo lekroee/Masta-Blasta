@@ -30,3 +30,11 @@ C:\Users\lekro665\Blaster Master\Blaster Master C#\Blaster Master\obj\Debug\Blas
 C:\Users\lekro665\Blaster Master\Blaster Master C#\Blaster Master\obj\Debug\Blaster Master.csproj.GenerateResource.Cache
 C:\Users\lekro665\Blaster Master\Blaster Master C#\Blaster Master\obj\Debug\BlasterMaster.exe
 C:\Users\lekro665\Blaster Master\Blaster Master C#\Blaster Master\obj\Debug\BlasterMaster.pdb
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\obj\Debug\BlasterMaster.exe
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\obj\Debug\BlasterMaster.pdb
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\bin\Debug\BlasterMaster.exe
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\bin\Debug\BlasterMaster.pdb
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\obj\Debug\Blaster Master.csprojResolveAssemblyReference.cache
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\obj\Debug\BlasterMaster.Form1.resources
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\obj\Debug\BlasterMaster.Properties.Resources.resources
+C:\Users\lekro665\Source\Repos\Masta-Blasta4\Blaster Master\obj\Debug\Blaster Master.csproj.GenerateResource.Cache
