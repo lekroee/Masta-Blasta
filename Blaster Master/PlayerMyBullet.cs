@@ -23,7 +23,7 @@ namespace BlasterMaster
             //------------------------------------------------------------------------------------------------------------------
 
             // Load resource image(s) & remove background and thu a sprite is born 
-            bullet = BlasterMaster.Properties.Resources.playerBullet;
+            bullet = BlasterMaster.Properties.Resources.myBullet;
             bullet.MakeTransparent(Color.White);
         }
 
@@ -41,11 +41,28 @@ namespace BlasterMaster
             base.setRectY(base.getY());
             base.setRectW(base.getW() - 5);
             base.setRectH(base.getH());
-
+            
             // call to render
             this.Draw(Destination);
         }
+        
+        private double GetSin(double degAngle)
+        {
+            //------------------------------------------------------------------------------------------------------------------
+            // Purpose: Method (return sin)   
+            //------------------------------------------------------------------------------------------------------------------
 
+            return Math.Sin(Math.PI * degAngle / 180);
+        }
+
+        private double GetCos(double degAngle)
+        {
+            //------------------------------------------------------------------------------------------------------------------
+            //  Purpose: Method (return cosin)   
+            //------------------------------------------------------------------------------------------------------------------
+
+            return Math.Cos(Math.PI * degAngle / 180);
+        }
         private void Draw(Graphics Destination)
         {
             //------------------------------------------------------------------------------------------------------------------
