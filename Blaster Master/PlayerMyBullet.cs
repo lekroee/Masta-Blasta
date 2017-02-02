@@ -23,18 +23,30 @@ namespace BlasterMaster
             //------------------------------------------------------------------------------------------------------------------
 
             // Load resource image(s) & remove background and thu a sprite is born 
-            bullet = BlasterMaster.Properties.Resources.myBullet;
+            bullet = BlasterMaster.Properties.Resources.playerBullet;
             bullet.MakeTransparent(Color.White);
         }
 
         public override void moveBullets(Graphics Destination)
         {
             //------------------------------------------------------------------------------------------------------------------
-            // Purpose: Method to move the player's bullets by 16 pixels every frame  
+            // Purpose: Twirl the Bullets  
             //------------------------------------------------------------------------------------------------------------------
 
             // Scroll bullets
-            base.setY(base.getY() - 15);
+            //base.setY(base.getY() - 15);                    
+            double x = 0;
+            double y = 0;
+            double deg = 360 / 12;
+            double radius = 25;
+            
+            // Fetch x & y
+            x = GetCos(x * deg + 90) * radius;
+            y = GetSin(y * deg + 90) * radius;
+            
+            // Apply coords
+            base.setX(base.getX() + -Convert.ToInt32(x));
+            base.setY(base.getY() + -Convert.ToInt32(y));
             
             // Sync collision rect
             base.setRectX(base.getX() + 2);
