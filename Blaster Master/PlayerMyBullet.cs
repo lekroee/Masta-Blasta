@@ -11,6 +11,8 @@ namespace BlasterMaster
 {
     public class PlayerMyBullet : clsPlayerBullet
     {
+        int m_deg = 15;
+        int m_radius = 35;
 
         // Obj refs and instances
         private System.Drawing.Bitmap bullet;
@@ -30,23 +32,21 @@ namespace BlasterMaster
         public override void moveBullets(Graphics Destination)
         {
             //------------------------------------------------------------------------------------------------------------------
-            // Purpose: Twirl the Bullets  
+            // Purpose: Scroll the bullets 
             //------------------------------------------------------------------------------------------------------------------
 
             // Scroll bullets
-            //base.setY(base.getY() - 15);                    
-            double x = 0;
-            double y = 0;
-            double deg = 360 / 12;
-            double radius = 25;
-            
-            // Fetch x & y
-            x = GetCos(x * deg + 90) * radius;
-            y = GetSin(y * deg + 90) * radius;
-            
+            //base.setY(base.getY() - 15);
+            int X = 0;
+            int Y = 0;
+            m_deg += 15;
+
+            X = GetCos(m_deg) * m_radius;
+            Y = GetSin(m_deg) * m_radius;
+
             // Apply coords
-            base.setX(base.getX() + -Convert.ToInt32(x));
-            base.setY(base.getY() + -Convert.ToInt32(y));
+            base.setX(base.getX() + X);
+            base.setY(base.getY() + Y - 5);
             
             // Sync collision rect
             base.setRectX(base.getX() + 2);
@@ -58,22 +58,24 @@ namespace BlasterMaster
             this.Draw(Destination);
         }
         
-        private double GetSin(double degAngle)
+        private int GetSin(int degAngle)
         {
             //------------------------------------------------------------------------------------------------------------------
             // Purpose: Method (return sin)   
             //------------------------------------------------------------------------------------------------------------------
 
-            return Math.Sin(Math.PI * degAngle / 180);
+            
+            return (int)Math.Sin(Math.PI * degAngle / 180);
         }
 
-        private double GetCos(double degAngle)
+        private int GetCos(int degAngle)
         {
             //------------------------------------------------------------------------------------------------------------------
             //  Purpose: Method (return cosin)   
             //------------------------------------------------------------------------------------------------------------------
 
-            return Math.Cos(Math.PI * degAngle / 180);
+            
+            return (int)Math.Cos(Math.PI * degAngle / 180);
         }
         private void Draw(Graphics Destination)
         {
