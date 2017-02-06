@@ -12,7 +12,7 @@ namespace BlasterMaster
     public class PlayerMyBullet : clsPlayerBullet
     {
         int m_deg = 15;
-        int m_radius = 35;
+        int m_radius = 30;
 
         // Obj refs and instances
         private System.Drawing.Bitmap bullet;
