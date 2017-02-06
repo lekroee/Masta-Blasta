@@ -913,7 +913,7 @@ namespace BlasterMaster
                                             case 1: //:: x1 fire ::
 
                                                 // Create new instances
-                                                playerbullet[i, 0] = new PlayerMyBullet(x - 2, y); //My Code
+                                                playerbullet[i, 0] = new clsPlayerBullet(x - 2, y);
                                                 
                                                 // Bail out
                                                 bailOut = true;
@@ -947,7 +947,14 @@ namespace BlasterMaster
 
                                                 // Bail out
                                                 bailOut = true;
-                                                break;                                                 
+                                                break;
+
+                                            case 7:
+                                                playerbullet[i, 0] = new PlayerMyBullet(x - 2, y);
+                                                playerbullet[i, 0] = new PlayerMyBullet(x + 10, y);
+
+                                                bailOut = true;
+                                                break;                                                
                                         }
 
                                         if (bailOut == true)
@@ -1280,7 +1287,7 @@ namespace BlasterMaster
                                                 {
                                                     // Fetch random pickup to drop
                                                     bool voidPickup = false;
-                                                    c = getRandomNumber(0, 3);
+                                                    c = getRandomNumber(0, 4);
 
                                                     switch (c)
                                                     {
@@ -1308,6 +1315,14 @@ namespace BlasterMaster
                                                             
                                                             // Void if player already has it
                                                             if (player.getFirePowerLevel() == 5)
+                                                            {
+                                                                voidPickup = true;
+                                                            }
+                                                            break;
+                                                        case 3: //:: x2 firepower ::
+
+                                                            // Void if player already has it
+                                                            if (player.getFirePowerLevel() == 2)
                                                             {
                                                                 voidPickup = true;
                                                             }
@@ -1374,6 +1389,7 @@ namespace BlasterMaster
             // 1. Sheild which last for 10 secs ...
             // 2. X3 fire which gives the player 20 shots
             // 3. X5 fire which gives the player 15 shots
+            // 4. x2 Twirl bullets 10 shots
             //------------------------------------------------------------------------------------------------------------------
 
             // The player can hold a sheild for 10 secs before they lose it
@@ -1399,6 +1415,15 @@ namespace BlasterMaster
             if (player.getFirePowerLevel() == 5)
             {
                 if (player.getX5FireAmmo() <= 0)
+                {
+                    player.setFirePower(1);
+                }
+            }
+
+            // x2 fire (10 shots)
+            if(player.getFirePowerLevel() == 2)
+            {
+                if(player.getX2FireAmmo() <= 0)
                 {
                     player.setFirePower(1);
                 }
@@ -1447,6 +1472,10 @@ namespace BlasterMaster
                             case 2: // x5 power
                                 player.setFirePower(5);
                                 player.setX5FireAmmo(5);
+                                break;
+                            case 3: // x2 power
+                                player.setFirePower(2);
+                                player.setX5FireAmmo(10);
                                 break;
                         }
 
@@ -1878,7 +1907,7 @@ namespace BlasterMaster
             // 2. High score
             // 3. Lives remaining
             // 4. Level ...
-            // 5. Fire power x1, x3 or x5
+            // 5. Fire power x1, x3, x5 or x2
             // 6. Sheild: yes / no with time remaining
             //------------------------------------------------------------------------------------------------------------------
 
@@ -1923,6 +1952,9 @@ namespace BlasterMaster
                     break;
                 case 5:
                     s = "x5 (" + player.getX5FireAmmo().ToString() + " Shots Remaining)";
+                    break;
+                case 7:
+                    s = "x2 (" + player.getX2FireAmmo().ToString() + " Shots Remaining)";
                     break;
             }
 
