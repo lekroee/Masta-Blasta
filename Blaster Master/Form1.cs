@@ -1397,7 +1397,6 @@ namespace BlasterMaster
             // The player can hold a sheild for 10 secs before they lose it
             if (player.hasSheild())
             {
-                player.setSheildTime(player.getSheildTime() + 1);
                 if (player.isDead())
                 {
                     player.setSheildTime(player.getSheildTime());
@@ -1405,6 +1404,10 @@ namespace BlasterMaster
                     {
                         player.setSheild(false);
                     }
+                }
+                else
+                {
+                    player.setSheildTime(player.getSheildTime() + 1);
                 }
             }
 
