@@ -949,9 +949,11 @@ namespace BlasterMaster
                                                 bailOut = true;
                                                 break;
 
-                                            case 7:
+                                            case 2: //two bullets, my code
                                                 playerbullet[i, 0] = new PlayerMyBullet(x - 2, y);
                                                 playerbullet[i, 0] = new PlayerMyBullet(x + 10, y);
+
+                                                player.setX2FireAmmo(player.getX2FireAmmo() - 1);
 
                                                 bailOut = true;
                                                 break;                                                
@@ -1475,7 +1477,7 @@ namespace BlasterMaster
                                 break;
                             case 3: // x2 power
                                 player.setFirePower(2);
-                                player.setX5FireAmmo(10);
+                                player.setX2FireAmmo(10);
                                 break;
                         }
 
@@ -1953,7 +1955,7 @@ namespace BlasterMaster
                 case 5:
                     s = "x5 (" + player.getX5FireAmmo().ToString() + " Shots Remaining)";
                     break;
-                case 7:
+                case 2:
                     s = "x2 (" + player.getX2FireAmmo().ToString() + " Shots Remaining)";
                     break;
             }
