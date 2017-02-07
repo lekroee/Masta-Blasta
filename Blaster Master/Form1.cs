@@ -1398,9 +1398,13 @@ namespace BlasterMaster
             if (player.hasSheild())
             {
                 player.setSheildTime(player.getSheildTime() + 1);
-                if (player.getSheildTime() > 500)
+                if (player.isDead())
                 {
-                    player.setSheild(false);
+                    player.setSheildTime(player.getSheildTime());
+                    if (player.getSheildTime() > 500)
+                    {
+                        player.setSheild(false);
+                    }
                 }
             }
 
@@ -1531,6 +1535,7 @@ namespace BlasterMaster
                     // Pickup rewarding large green invader (12 p/level)
                     switch (k)
                     {
+                        case 2:
                         case 3:
                         case 9:
                         case 12:
